@@ -3,31 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pythagorean Theorem</title>
+    <title>Mathematical Function Explorer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Pythagorean Theorem</h1>
+        <h1>Mathematical Function Explorer</h1>
     </header>
     <main>
-        <section id="theorem">
-            <h2>What is the Pythagorean Theorem?</h2>
-            <p>The Pythagorean Theorem states that in a right-angled triangle, the square of the length of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the lengths of the other two sides. Mathematically, it can be expressed as:</p>
-            <p class="math-equation">a² + b² = c²</p>
+        <section id="function-description">
+            <h2>Exploring a Simple Function: \( f(x) = x^2 + 3x + 2 \)</h2>
+            <p>
+                A mathematical function is a relationship between inputs and outputs. Let's explore the function:
+                \[
+                f(x) = x^2 + 3x + 2
+                \]
+                This is a quadratic function, and its graph is a parabola. Below, you can see the Python code to implement this function.
+            </p>
         </section>
-        <section id="proof">
-            <h2>Simple Proof of the Pythagorean Theorem</h2>
-            <p>One of the simplest proofs of the Pythagorean Theorem involves rearranging four identical right-angled triangles within a square. Here's how it works:</p>
-            <div class="proof-visual">
-                <div class="square" id="square1"></div>
-                <div class="square" id="square2"></div>
-            </div>
-            <p>By rearranging the triangles, we can see that the area of the large square (c²) is equal to the sum of the areas of the two smaller squares (a² + b²).</p>
+        <section id="python-code">
+            <h2>Python Implementation</h2>
+            <pre><code>
+def f(x):
+    return x**2 + 3*x + 2
+
+# Example usage:
+x_values = range(-10, 11)
+for x in x_values:
+    print(f"f({x}) = {f(x)}")
+            </code></pre>
+            <p>
+                This code defines the function \( f(x) \) and calculates its value for \( x \) in the range \(-10\) to \(10\).
+            </p>
         </section>
-        <section id="interactive">
-            <h2>Interactive Proof</h2>
-            <p>Adjust the sides of the triangle to see how the Pythagorean Theorem holds true:</p>
-            <div class="slider-container">
-                <label for="a">Side a:</label>
-                <input type="range" id="a" min="1" max="10" value
+        <section id="graph">
+            <h2>Graph of \( f(x) \)</h2>
+            <canvas id="functionGraph" width="400" height="400"></canvas>
+            <p>This graph visually represents the function \( f(x) = x^2 + 3x + 2 \).</p>
+        </section>
+    </main>
+    <footer>
+        <p>Created with ❤️ by Math Enthusiasts</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
