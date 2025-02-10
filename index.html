@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    
+    <!-- MathJax for LaTeX rendering -->
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #34495e;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            width: 80%;
+            margin: 30px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h2 {
+            font-size: 28px;
+            color: #2c3e50;
+        }
+
+        .content p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #34495e;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .latex {
+            font-family: 'Source Code Pro', monospace;
+            color: #c0392b;
+        }
+
+        .latex-code {
+            background-color: #ecf0f1;
+            border-radius: 5px;
+            padding: 15px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to the Math Blog</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Posts</a>
+        <a href="#">About</a>
+    </nav>
+
+    <div class="content">
+        <h2>Understanding the Pythagorean Theorem</h2>
+        <p>One of the most famous theorems in mathematics is the Pythagorean Theorem. It states that in a right triangle, the square of the length of the hypotenuse (\( c \)) is equal to the sum of the squares of the lengths of the other two sides (\( a \) and \( b \)).</p>
+        <p>Mathematically, this is expressed as:</p>
+        <p class="latex">\[
+            a^2 + b^2 = c^2
+        \]</p>
+
+        <h2>Code Snippet for Solving a Right Triangle</h2>
+        <p>Here's a simple Python code snippet that computes the hypotenuse:</p>
+        <div class="latex-code">
+            <pre><code>import math
+
+def pythagorean_theorem(a, b):
+    return math.sqrt(a**2 + b**2)
+
+# Example usage
+print(pythagorean_theorem(3, 4))  # Output: 5.0
+            </code></pre>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Math Blog | Created by Your Name</p>
+    </footer>
+
+</body>
+
+</html>
